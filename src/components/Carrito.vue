@@ -9,6 +9,9 @@
         <div class="card p-3 my-5">
             <h4 class="text-center" >Total: ${{ total }}</h4>
         </div>
+        <button @click="$emit('pagar')" class="btn-info form-control" :disabled="items.length === 0">
+           Pagar ahora 
+        </button>
     </div>
 </template>
 

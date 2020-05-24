@@ -10,7 +10,7 @@
       </div>
       <div class="col-md-5 my-5">
         <div class="row">
-          <carrito :items="carrito" v-on:remover-item="removerProducto"/>
+          <carrito :items="carrito" v-on:remover-item="removerProducto" v-on:pagar="pagar"/>
         </div>
       </div>
     </div> 
@@ -48,6 +48,10 @@ export default {
     removerProducto(producto){
       this.carrito = this.carrito.filter(item => item.id != producto.id)
 
+    },
+    pagar(){
+      this.carrito = [];
+      alert("Venta Completada!!!")
     }
   }
 }
