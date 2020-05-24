@@ -1,4 +1,4 @@
-# 07-carrito
+# 07-carrito-compras-vue
 
 ## Project setup
 ```
